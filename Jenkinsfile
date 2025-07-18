@@ -3,7 +3,7 @@ pipeline {
 
   stages {
     stage('Checkout') {
-      steps { git 'https://your.repo.url.git' }
+      steps { git 'https://github.com/Mahshadgol/Lung_CT_Segmentation.git' }
     }
     stage('Build Docker') {
       steps { script { docker.build('lung-ct') } }
